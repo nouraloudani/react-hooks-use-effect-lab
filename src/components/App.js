@@ -3,10 +3,10 @@ import Question from "./Question";
 import quiz from "../data/quiz";
 
 function App() {
-  const [questions, setQuestions] = useState(quiz);
-  const [currentQuestionId, setCurrentQuestion] = useState(1);
+  const [questions, setQuestions] = useState(quiz); 
+  const [currentQuestionId, setCurrentQuestion] = useState(1); //cq
   const [score, setScore] = useState(0);
-  const currentQuestion = questions.find((q) => q.id === currentQuestionId);
+  const currentQuestion = questions.find((q) => q.id === currentQuestionId); //cq
 
   function handleQuestionAnswered(correct) {
     if (currentQuestionId < questions.length) {
